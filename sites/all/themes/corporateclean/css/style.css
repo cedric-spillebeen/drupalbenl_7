@@ -115,6 +115,19 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efeeee', endColorstr='#dadada');
 }
 
+#preface {
+	clear:both;
+	overflow:hidden;
+}
+
+#preface-inside {
+	width: 960px;
+	margin: 0 auto;
+	padding:30px 0 60px;
+	overflow:hidden;
+	display:block;
+} 
+
 #content {
 	clear:both;
 	overflow:hidden;
