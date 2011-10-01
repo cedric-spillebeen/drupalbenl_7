@@ -103,6 +103,26 @@
             
             <?php print render($page['content']); ?>
             
+						<!-- Content Bottom 2-column --> 
+						<?php if ($page['content_bottom_2_column_first'] || $page['content_bottom_2_column_second']): ?>   
+						<div id="content_bottom_2_column">
+						
+						    <div id="content_bottom_2_column-inside">
+						    
+						        <div class="content_bottom_column first">
+						        <?php print render($page['content_bottom_2_column_first']); ?>
+						        </div>
+						        
+						        <div class="content_bottom_column second">
+						        <?php print render($page['content_bottom_2_column_second']); ?>
+						        </div>
+						        			       
+						    </div><!-- EOF: #content_bottom_2_column-inside -->
+						
+						</div><!-- EOF: #content_bottom_2_column -->
+						<?php endif; ?>
+					
+            
             <?php print $feed_icons; ?>
             
         </div><!-- EOF: #main -->

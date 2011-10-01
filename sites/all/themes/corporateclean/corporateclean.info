@@ -9,6 +9,8 @@ regions[search_area] = Search area
 regions[highlighted] = Highlighted
 regions[preface] = Preface
 regions[content] = Content
+regions[content_bottom_2_column_first] = Content Bottom 2-column first
+regions[content_bottom_2_column_second] = Content Bottom 2-column second
 
 regions[sidebar_first] = First sidebar
 

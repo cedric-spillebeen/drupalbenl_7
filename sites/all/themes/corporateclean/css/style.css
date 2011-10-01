@@ -123,9 +123,9 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 #preface-inside {
 	width: 960px;
 	margin: 0 auto;
-	padding:30px 0 60px;
-	overflow:hidden;
-	display:block;
+	padding: 0px;
+	overflow: hidden;
+	display: block;
 } 
 
 #content {
@@ -155,6 +155,20 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 	overflow:hidden;
 	display:block;
 } 
+
+
+
+.content_bottom_column {
+	width: 286px;
+	float: left;
+	padding: 0 48px 0 0;
+}
+.content_bottom_column.second {
+	padding: 0;
+}
+
+
+
 
 #main {
 	float:left;
