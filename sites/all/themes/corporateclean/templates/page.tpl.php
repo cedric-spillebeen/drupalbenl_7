@@ -42,109 +42,23 @@
 
 </div><!-- EOF: #header-menu -->
 
+
+<!-- Preface. -->
+<?php if ($page['preface']): ?>
+<div id="preface">
+  <div id="preface-inside">    
+		<?php print render($page['preface']); ?>
+  </div><!-- EOF: #preface-inside -->
+</div><!-- EOF: #preface -->
+<?php endif; ?> 
+
+
 <!-- Banner. -->
+<?php if ($page['banner']): ?>
 <div id="banner">
-
-	<?php print render($page['banner']); ?>
-	
-    <?php if (theme_get_setting('slideshow_display','corporateclean')): ?>
-    
-    <?php if ($is_front): ?>
-    
-    <!--slideshow-->
-    <div id="slideshow">
-    
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content">
-                
-                <!--slider-item content-->
-                <div style="float:left; padding:0 30px 0 0;">
-                <img height="250px" class="masked" src="<?php print base_path() . drupal_get_path('theme', 'corporateclean') ;?>/mockup/slide-1.jpg"/>
-                </div>
-                <h2>Sample product name</h2>
-                <strong>General</strong><br/>
-                <em>Client name</em><br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                <div style="display:block; padding:30px 0 10px 0;"><a class="more" href="#">Tell me more</a></div>
-                <!--EOF:slider-item content-->
-                
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content">
-            
-                <!--slider-item content-->
-                <div style="float:right; padding:0 0 0 30px;">
-                <img height="250px" class="masked" src="<?php print base_path() . drupal_get_path('theme', 'corporateclean') ;?>/mockup/slide-2.jpg"/>
-                </div>
-                <h2>Sample service name</h2>
-                <strong>General</strong><br/>
-                <em>Client name</em><br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                <div style="display:block; padding:30px 0 10px 0;"><a class="more" href="#">Tell me more</a></div>
-                <!--EOF:slider-item content-->
-            
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content">
-            
-                <!--slider-item content-->
-                <h2>Sample product name</h2>
-                <strong>General</strong><br/>
-                <em>Client name</em><br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                <div style="display:block; padding:30px 0 10px 0;"><a class="more" href="#">Tell me more</a></div>
-                <!--EOF:slider-item content-->
-            
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-        
-        <!--slider-item-->
-        <div class="slider-item">
-            <div class="content">
-                
-                <!--slider-item content-->
-                <img height="250px" class="masked" src="<?php print base_path() . drupal_get_path('theme', 'corporateclean') ;?>/mockup/slide-3.jpg"/>
-                <!--EOF:slider-item content-->
-            
-            </div>
-        </div>
-        <!--EOF:slider-item-->
-    
-    </div>
-    <!--EOF:slideshow-->
-    
-    <!--slider-controls-wrapper-->
-    <div id="slider-controls-wrapper">
-        <div id="slider-controls">
-            <ul id="slider-navigation">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-    </div>
-    <!--EOF:slider-controls-wrapper-->
-    
-    <?php endif; ?>
-    
-	<?php endif; ?>  
-
-</div><!-- EOF: #banner -->
-
+	<?php print render($page['banner']); ?>    
+</div><!-- EOF: #banner -->	
+<?php endif; ?> 
 
 <!-- Content. -->
 <div id="content">
@@ -168,22 +82,46 @@
             <?php print render($page['help']); ?>
             </div>
             <?php endif; ?>
-            
+
             <?php if ($action_links): ?>
             <ul class="action-links">
             <?php print render($action_links); ?>
             </ul>
             <?php endif; ?>
             
-			<?php print render($title_prefix); ?>
+            
+            
+						<?php print render($title_prefix); ?>
             <?php if ($title): ?>
             <h1><?php print $title ?></h1>
             <?php endif; ?>
             <?php print render($title_suffix); ?>
             
+ 
+            
             <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
             
             <?php print render($page['content']); ?>
+            
+						<!-- Content Bottom 2-column --> 
+						<?php if ($page['content_bottom_2_column_first'] || $page['content_bottom_2_column_second']): ?>   
+						<div id="content_bottom_2_column">
+						
+						    <div id="content_bottom_2_column-inside">
+						    
+						        <div class="content_bottom_column first">
+						        <?php print render($page['content_bottom_2_column_first']); ?>
+						        </div>
+						        
+						        <div class="content_bottom_column second">
+						        <?php print render($page['content_bottom_2_column_second']); ?>
+						        </div>
+						        			       
+						    </div><!-- EOF: #content_bottom_2_column-inside -->
+						
+						</div><!-- EOF: #content_bottom_2_column -->
+						<?php endif; ?>
+					
             
             <?php print $feed_icons; ?>
             
