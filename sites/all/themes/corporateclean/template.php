@@ -30,34 +30,9 @@ function corporateclean_form_alter(&$form, &$form_state, $form_id) {
 }
 
 /**
- * Add javascript files for page--front jquery slideshow.
+ * Add javascript files for Google Fonts
  */
-drupal_add_js(drupal_get_path('theme', 'corporateclean') . '/js/jquery.cycle.all.min.js');
+drupal_add_js('http://fonts.googleapis.com/css?family=Varela+Round','external');
 
-//Initialize slideshow using theme settings
-$effect=theme_get_setting('slideshow_effect','corporateclean');
-$effect_time=theme_get_setting('slideshow_effect_time','corporateclean')*1000;
-
-drupal_add_js('jQuery(document).ready(function($) {  
-
-$("#slideshow").cycle({
-	fx:    "'.$effect.'",
-	speed:  "slow",
-	timeout: "'.$effect_time.'",
-	pager:  "#slider-navigation",
-	pagerAnchorBuilder: function(idx, slide) {
-		return "#slider-navigation li:eq(" + (idx) + ") a";
-	},
-	after: onAfter
-});
-
-function onAfter(curr, next, opts, fwd){
-	var $ht = $(this).height();
-	$(this).parent().animate({height: $ht});
-}
-
-});',
-array('type' => 'inline', 'scope' => 'header', 'weight' => 5)
-);
 
 ?>
