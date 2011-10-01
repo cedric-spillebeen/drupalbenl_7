@@ -3,7 +3,7 @@ description = CorporateClean
 version = VERSION
 core = 7.x
 
-stylesheets[all][] = style.css
+stylesheets[all][] = css/style.css
 
 regions[search_area] = Search area
 regions[highlighted] = Highlighted
