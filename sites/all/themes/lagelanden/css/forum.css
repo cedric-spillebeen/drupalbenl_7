@@ -1,0 +1,15 @@
+/* 13. FORUM */
+#forum .links {
+  margin-bottom: 1em;
+}
+#forum .links a {
+  background: transparent url(../images/arrow.gif) no-repeat scroll right center;
+  padding-right: 23px;
+  font-weight: bold;
+}
+#forum .container {
+  font-size: 1.1em;
+  padding: 1em;
+  padding-bottom: 0.6em;
+  background-color: #ddd;
+}

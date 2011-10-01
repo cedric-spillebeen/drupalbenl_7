@@ -1,0 +1,25 @@
+/**
+ * 8.FOOTER
+ */
+#footer {
+  margin: 0 0 10px;
+  padding: 5px 0;
+  position: relative;
+}
+#footer a.feed-icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+#footer #block-system-0 {
+  position: absolute;
+  right: 25px;
+  top: 6px;
+}
+ul.footer_menu li a {
+  color: #000000;
+}
+ul.footer_menu li {
+  float:left;
+  list-style-type: none;
+}

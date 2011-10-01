@@ -1,0 +1,78 @@
+/* 11. EVENTS */
+.event-horizontal-break {
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.event-wrapper {
+  clear:both
+}
+.event-datum-wrapper {
+  float: left;
+  margin-right: 1em;
+}
+.event-info-wrapper {
+  float: left;
+  width: 560px;
+}
+.event-node-info-wrapper {
+  float: left;
+  width: 530px;
+}
+.event-info-wrapper-block {
+  float: left;
+  width: 110px;
+}
+.event-map-wrapper {
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.event-text {
+  margin-top: 11px;
+}
+.event-text-wrapper-block {
+  float: left;
+  width: 194px;
+}
+.event-datum-dag {
+  font-size: 4em;
+  padding:0;
+  margin:0;
+  line-height: normal;
+}
+.event-datum-maand {
+  font-size: 3em;
+  padding: 0;
+  margin-top: -0.4em;
+  line-height: normal;
+}
+.event-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+}
+.event-locatie {
+  margin-top: 0em;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.event-locatie-block {
+  margin-top: 0em;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.event-address-line {
+  margin: 0px;
+  font-size: 16px;
+  margin-bottom: -4px;
+}
+.content ul li,
+.view-header ul li {
+ list-style-image: none;
+ list-style-type: none;
+ background: transparent url(../images/blue-arrow.gif) no-repeat scroll left 0.5em;
+ margin: 0.15em 0;
+ padding: 0 0 0.2em 1em;
+}
+.content ul.menu li a {
+ padding: 0.1em 0;
+}

@@ -1,0 +1,273 @@
+body {
+  color:#444;
+}
+
+#container {
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+#wrapper {
+  line-height:1.5em;
+}
+
+#sidebar-right .block, ul  {
+  line-height:normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height:normal;
+}
+
+#center .node h3 {
+  color:#9FC748;
+  font-variant:small-caps;
+  font-weight:bold;
+}
+
+#center {
+  padding-top:0;
+}
+
+#sidebar-right {
+  margin-top:0;
+}
+
+#container a {
+  color:#0475BB;
+}
+
+#container a:hover {
+  text-decoration:underline;
+}
+
+.block h3 {
+  margin:0.5em 0 0.2em 0;
+}
+
+.block .item-list ul, .block ul {
+  margin:0;
+  padding:0;
+}
+
+.field-field-leesmeer, .views-field-view-node, .more-link {
+  text-align:right;
+  margin-top:10px;
+  font-weight:bold;
+}
+
+.views-field-title {
+  font-weight:bold;
+  font-size:1.2em;
+  margin-bottom:0.5em;
+}
+
+table .views-field-title {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+}
+
+textarea, input.form-text {
+  border:1px solid #ccc;
+}
+
+.resizable-textarea, input.form-text {
+  width:100%;
+}
+
+span.submitted {
+  text-transform:uppercase;
+  font-size:0.7em;
+}
+
+.meta {
+  padding:0;
+}
+
+thead th {
+  font-weight:normal;
+  padding: 2px 8px;
+}
+
+tbody {
+  border-top:0;
+}
+
+/* Forum zaken */
+
+#forum tr td.forum, #forum td {
+  background-position:8px 9px;
+  vertical-align:top;
+}
+
+#forum td {
+  padding:8px;
+}
+
+#forum thead tr {
+  background:#0173BA;
+  color:#fff;
+  padding:3px;
+}
+
+#forum thead tr a {
+  color:#fff;
+}
+
+#forum .container {
+  padding: 8px;
+  background:#E6EFCE;
+  color: #333;
+}
+
+#forum .description {
+  margin:0;
+}
+
+.forum-topic-navigation {
+  border-bottom:1px dashed #AAAAAA;
+  border-top:1px dashed #AAAAAA;
+}
+
+td.last-reply {
+  font-style:italic;
+  color:#898989;
+  font-size:90%;
+}
+
+tr.odd {
+  background-color:#f4f4f4;
+}
+
+tr.odd {
+  background-color:#fff;
+}
+
+tr.even, tr.odd {
+  border-bottom:1px solid #AAAAAA;
+}
+
+.comment .submitted {
+  font-style:italic;
+}
+
+.comment .links {
+  clear:both;
+  float:none;
+  font-style:italic;
+  margin:0;
+  font-size:90%;
+}
+
+.comment .links a{
+  text-decoration:underline;
+  font-size:90%;
+}
+
+.comment .content {
+  border-bottom:1px dashed #CCCCCC;
+}
+
+.forum-topic-navigation .topic-next {
+  text-align:right;
+}
+
+.forum-topic-navigation .topic-previous {
+  text-align:left;
+}
+
+
+/* Footer */
+
+#footer {
+  margin-left:243px;
+}
+
+#footer a {
+  text-decoration:underline;
+}
+
+/* Bulletes in content */
+
+#block-menu-menu-metamenu .content ul li {
+  background:none;
+}
+
+/* Tabs */
+
+#tabs-wrapper ul.tabs li{
+  background:url(../images/groenbg.gif) #9FC748;
+  padding:2px 5px;
+  margin-right:3px;
+}
+
+#tabs-wrapper ul.tabs a{
+  color:#fff;
+}
+
+#tabs-wrapper ul.primary li a, #tabs-wrapper ul.primary li.active a, #tabs-wrapper ul.primary li a:hover, #tabs-wrapper ul.primary li a:visited {
+  padding:0 0.5em;
+  text-decoration:none;
+}
+
+/* navigatie menu */
+
+ul.menu li.expanded ul {
+  margin-left:15px;
+}
+
+#block-user-1 .content ul.menu li ul li {
+  background-position:0 0.5em;
+}
+
+/* center breedte */
+
+body.sidebar-right #center {
+  width:650px;
+}
+
+/* buttons */
+
+input#edit-preview, input#edit-submit {
+  background:url(../images/groenbg.gif) #9FC748;
+  color:#fff;
+}
+
+/* Book navigation */
+
+.book-navigation .menu {
+  border-top:none;
+  padding:1em 0 1em 3em;
+}
+
+.book-navigation .page-links {
+  border-bottom:1px dashed #aaa;
+  border-top:1px dashed #aaa;
+}
+
+/* search button */
+
+#search-theme-form .form-submit {
+  margin-top:0;
+}
+
+/* menu */
+
+ul.secondary-links li a {
+  padding:6px 0 8px 10px;
+}
+
+ul.secondary-links li a span.tab-right {
+  padding:5px 12px 2px 0;
+}
+
+/* Frontpage */
+
+.view-frontpage a.imagecache-showcase_block img {
+  float:left;
+  margin-right:10px;
+}
+
+.view-frontpage .meta div.links {
+  clear:both;
+}
