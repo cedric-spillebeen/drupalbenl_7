@@ -1,3 +1,6 @@
 name = This is custom
 core = 7.x
 description = "Custom glue code"
+
+dependencies[] = location
+dependencies[] = comment
