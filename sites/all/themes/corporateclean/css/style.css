@@ -8,7 +8,14 @@
  */
 body { font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; margin:0; padding:0; color: #7a7a7a; outline:0 none; vertical-align:baseline; background:#1a1a1a; }
 
-h1, h2, h3, h4, h5, h6 { margin:25px 0 20px 0; line-height:120%; text-shadow: 1px 1px 1px #EAF1EA; color:#1487d4; font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6 { 
+  margin:25px 0 20px 0; 
+  line-height:120%; 
+  text-shadow: 1px 1px 1px #EAF1EA; 
+  color:#1487d4; 
+  font-family: 'Varela Round',Helvetica,Arial,sans-serif;
+  font-weight:normal;
+}
 
 h1 { font-size: 32px; margin:0 0 20px 0; }
 
