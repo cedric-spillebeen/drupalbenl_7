@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * tic.module
+ * Automatically close comments on nodes beyond 1 year
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function tic_cron() {
+  $ct = 'forum';
+
+  // Update those rows.
+  $subquery = db_select('node_comment_statistics', 'ncs')
+    ->fields('ncs', array('nid'))
+    ->condition('ncs.last_comment_timestamp', strtotime('-1 years'), '<');
+
+  $subquery2 = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('type', $ct)
+    ->condition('comment', COMMENT_NODE_CLOSED);
+
+  db_update('node')
+    ->fields(array('comment' => COMMENT_NODE_CLOSED))
+    ->condition('nid', $subquery, 'IN')
+    ->condition('type', $ct)
+    ->condition('comment', COMMENT_NODE_OPEN)
+    ->execute();
+  db_update('node_revision')
+    ->fields(array('comment' => COMMENT_NODE_CLOSED))
+    ->condition('nid', $subquery2, 'IN')
+    ->condition('comment', COMMENT_NODE_OPEN)
+    ->execute();
+}
