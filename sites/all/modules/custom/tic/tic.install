@@ -199,3 +199,26 @@ function tic_update_1001() {
   }
   return $ret;
 }
+
+function tic_update_1002() {
+  db_update('field_data_body')
+    ->fields(array('body_format' => 1))
+    ->condition('body_format', 4)
+    ->execute();
+  db_update('field_data_body')
+    ->fields(array('body_format' => 1))
+    ->condition('body_format', 2)
+    ->execute();
+  db_update('field_revision_body')
+    ->fields(array('body_format' => 1))
+    ->condition('body_format', 4)
+    ->execute();
+  db_update('field_revision_body')
+    ->fields(array('body_format' => 1))
+    ->condition('body_format', 2)
+    ->execute();
+  db_update('system')
+    ->fields(array('schema_version' => 7315)
+    ->condition('name', 'webform')
+    ->execute();
+}
