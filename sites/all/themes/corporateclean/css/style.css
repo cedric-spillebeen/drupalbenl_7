@@ -61,7 +61,10 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 
 #site-name {
 	color: #fff;
-	font-size: 4em; 
+	font-size: 2.6em; 
+	display: inline-block;
+	position: relative;
+	left: -1px;
 	}
 #site-name a {
 	color: #fff;
@@ -69,8 +72,9 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 
 #slogan {
 	color: #fff;
-	font-size: 2em;
-	margin-left: 1em; 
+	font-size: 1.2em;
+	margin-top: 0.1em;
+		display: inline-block;
 	}
 
 /* 
