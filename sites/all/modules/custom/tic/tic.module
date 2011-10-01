@@ -10,7 +10,7 @@
  * Implements hook_cron().
  */
 function tic_cron() {
-  $ct = 'article';
+  $ct = 'forum';
 
   // Update those rows.
   $subquery = db_select('node_comment_statistics', 'ncs')
