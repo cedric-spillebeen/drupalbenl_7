@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Import event and showcase locations
+ *
+ */
 function tic_update_1001() {
   $nodemap = array(
     array('nodemap_nid'=>'1816','nodemap_latitude'=>'51.195217','nodemap_longitude'=>'4.409057','nodemap_address'=>'Karel Oomsstraat, 2018 Antwerp, Belgium','nodemap_serialized'=>'a:8:{s:9:"precision";i:6;s:8:"latitude";d:51.19521610000000322315827361308038234710693359375;s:9:"longitude";d:4.40905660000000043652335079968906939029693603515625;s:7:"address";s:39:"Karel Oomsstraat, 2018 Antwerp, Belgium";s:4:"city";s:7:"Antwerp";s:5:"state";s:14:"Flemish Region";s:3:"zip";N;s:7:"country";s:2:"BE";}','nid'=>'1816','type'=>'event','title'=>'Drupal.be code sprint','uid'=>'2669','status'=>'1','created'=>'1234613196','changed'=>'1243899230','comment'=>'2','promote'=>'0','moderate'=>'0','sticky'=>'0','vid'=>'1829','language'=>'','tnid'=>'0','translate'=>'0'),
@@ -200,7 +204,10 @@ function tic_update_1001() {
   return $ret;
 }
 
-function tic_update_1002() {
+/*
+ * Update schema version of webform, fix revision information
+ */
+function tic_update_7002() {
   db_update('field_data_body')
     ->fields(array('body_format' => 1))
     ->condition('body_format', 4)
@@ -218,7 +225,41 @@ function tic_update_1002() {
     ->condition('body_format', 2)
     ->execute();
   db_update('system')
-    ->fields(array('schema_version' => 7315)
+    ->fields(array('schema_version' => 7315))
     ->condition('name', 'webform')
     ->execute();
+  db_update('field_data_comment_body')
+    ->fields(array('comment_body_format' => 1))
+    ->condition('comment_body_format', 4)
+    ->execute();
+  db_update('field_revision_comment_body')
+    ->fields(array('comment_body_format' => 1))
+    ->condition('comment_body_format', 4)
+    ->execute();
+  db_update('field_data_field_advertorial')
+    ->fields(array('field_advertorial_format' => 1))
+    ->condition('field_advertorial_format', 4)
+    ->execute();
+  db_update('field_revision_field_advertorial')
+    ->fields(array('field_advertorial_format' => 1))
+    ->condition('field_advertorial_format', 4)
+    ->execute();
+  db_update('field_data_field_serviceprovider_comp')
+    ->fields(array('field_serviceprovider_comp_format' => 1))
+    ->condition('field_serviceprovider_comp_format', 4)
+    ->execute();
+  db_update('field_revision_field_serviceprovider_comp')
+    ->fields(array('field_serviceprovider_comp_format' => 1))
+    ->condition('field_serviceprovider_comp_format', 4)
+    ->execute();
+
+  db_change_field('watcher_user_settings', 'automatic_enable_notifications', 'automatic_enable_notifications', array(
+    'description' => 'Automatically enable notifications for the post when a user starts watching a post',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  return array();
 }
