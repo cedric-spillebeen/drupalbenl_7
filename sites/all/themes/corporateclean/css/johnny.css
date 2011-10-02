@@ -1,5 +1,6 @@
 .views-row {
   margin-bottom: 25px;
+  clear: left;
 }
 
 .views-field-field-location {
@@ -10,4 +11,9 @@
 
 .views-field-field-location > div, .views-field-field-location > strong {
   padding-left: 10px;
+}
+
+.view-Evenementen .views-field-body {
+  float: left;
+  width: 60%;
 }
