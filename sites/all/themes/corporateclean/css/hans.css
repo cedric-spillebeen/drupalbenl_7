@@ -39,7 +39,7 @@
   clear:both;
 }
 
-/* Correcties */
+/* Correcties voor toevoeging aan style.css */
 
 #preface {
   padding:20px 0;
@@ -47,4 +47,8 @@
 
 body.front h1 {
   display:none;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Coustard',Helvetica,Arial,sans-serif;
 }
