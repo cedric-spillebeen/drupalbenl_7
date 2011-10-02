@@ -9,20 +9,26 @@ stylesheets[all][] = fonts/centabel/stylesheet.css
 
 regions[search_area] = Search area
 regions[menu] = Menu
-regions[highlighted] = Highlighted
+
 regions[preface] = Preface
+regions[rij1] = Rij 1
+regions[rij2] = Rij 2
+
 regions[content] = Content
-regions[content_bottom_2_column_first] = Content Bottom 2-column first
-regions[content_bottom_2_column_second] = Content Bottom 2-column second
+
+regions[bottom1] = Bottom 1
+regions[bottom2] = Bottom 2
 
 regions[sidebar_first] = First sidebar
 
-regions[footer_first] = Footer first
-regions[footer_second] = Footer second
-regions[footer_third] = Footer third
+regions[footer_first] = Footer 1
+regions[footer_second] = Footer 2
+regions[footer_third] = Footer 3
+
 regions[footer] = Footer
 regions[footer_bottom_right] = Footer bottom right
 
+regions[highlighted] = Highlighted
 regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
