@@ -1,8 +1,0 @@
-name = "Watcher"
-description = "Watcher enables your site's users to watch nodes for changes and new comments and be notified about them."
-package = Other
-core = 7.x
-dependencies[] = node
-dependencies[] = token
-dependencies[] = comment
-files[] = watcher.module
