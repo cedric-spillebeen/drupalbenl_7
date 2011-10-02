@@ -7,12 +7,23 @@
 
 #block-views-banner-block .views-field-title, #block-views-banner-block .views-field-body {
   position:absolute;
-  top:20px;
+  top:100px;
   right:20px;
   width:250px;
-  height:200px;
+  height:90px;
   background:#fff;
   opacity: .7;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
   filter: alpha(opacity=70); // IE5.5-7
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding:15px;
+  color:#000;
+}
+
+/* Correcties */
+
+#preface {
+  padding:20px 0;
 }
