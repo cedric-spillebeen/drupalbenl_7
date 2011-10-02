@@ -27,8 +27,9 @@
  */
 
 #block-views-gezichten-van-community-block .views-row img {
-  width:58px;
-  height:58px;
+  width:52px;
+  height:52px;
+  padding: 2px;
 }
 
 #block-views-gezichten-van-community-block .user-picture {
