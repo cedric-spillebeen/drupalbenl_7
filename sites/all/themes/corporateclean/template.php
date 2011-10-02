@@ -32,7 +32,7 @@ function corporateclean_form_alter(&$form, &$form_state, $form_id) {
 /**
  * Add javascript files for Google Fonts
  */
-drupal_add_js('http://fonts.googleapis.com/css?family=Varela+Round','external');
+drupal_add_js('http://fonts.googleapis.com/css?family=Coustard','external');
 
 
 ?>
