@@ -1,0 +1,7 @@
+/*
+ * Views slideshow
+ */
+#block-views-banner-block .views-field-title, #block-views-banner-block .views-field-body {
+  width:250px;
+  height:200px;
+}
