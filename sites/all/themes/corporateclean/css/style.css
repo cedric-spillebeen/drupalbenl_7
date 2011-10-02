@@ -173,6 +173,19 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 	display: block;
 } 
 
+#rij1, #rij2 {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+  display: block;
+} 
+
+#rij1 .block, #rij2 {
+  width:300px;
+  float:left;
+} 
+
 #content {
 	clear:both;
 	overflow:hidden;
@@ -609,7 +622,9 @@ div.messages.status a, div.messages.error a, div.messages.warning a { color:#fff
 */
 table { border-collapse: collapse; width:100%; }
 
-table, td { border: 1px solid #bbbbbb; }
+table, td { 
+  border-top: 1px solid #bbbbbb;
+}
 
 table th { background:#222222; color:#ffffff; font-weight:bold; border:none; }
 

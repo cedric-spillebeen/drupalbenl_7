@@ -110,11 +110,11 @@
 	<!-- Bottom region --> 
 	<?php if ($page['bottom1'] || $page['bottom1']): ?>   
 	  <div id="bottom">   
-	    <div class="bottom1 block">
+	    <div class="bottom1">
 	      <?php print render($page['bottom1']); ?>
 	    </div>
 	  
-	    <div class="bottom2 block">
+	    <div class="bottom2">
 	      <?php print render($page['bottom2']); ?>
 	    </div>
           </div><!-- EOF: #bottom -->
@@ -134,21 +134,18 @@
 
 <!-- Footer -->    
 <div id="footer">
-
-    <div id="footer-inside">
+  <div id="footer-inside">
+    <div class="footer-area first">
+    <?php print render($page['footer_first']); ?>
+    </div><!-- EOF: .footer-area -->
     
-        <div class="footer-area first">
-        <?php print render($page['footer_first']); ?>
-        </div><!-- EOF: .footer-area -->
-        
-        <div class="footer-area second">
-        <?php print render($page['footer_second']); ?>
-        </div><!-- EOF: .footer-area -->
-        
-        <div class="footer-area third">
-        <?php print render($page['footer_third']); ?>
-        </div><!-- EOF: .footer-area -->
-       
-    </div><!-- EOF: #footer-inside -->
-
+    <div class="footer-area second">
+    <?php print render($page['footer_second']); ?>
+    </div><!-- EOF: .footer-area -->
+    
+    <div class="footer-area third">
+    <?php print render($page['footer_third']); ?>
+    </div><!-- EOF: .footer-area -->
+      
+  </div><!-- EOF: #footer-inside -->
 </div><!-- EOF: #footer -->
