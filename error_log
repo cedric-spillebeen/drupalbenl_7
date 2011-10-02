@@ -54,3 +54,7 @@
 [01-Oct-2011 15:51:46] PHP Fatal error:  Class 'FacesExtendable' not found in /home/drush/public_html/drupalbenl_7/sites/all/modules/rules/includes/rules.core.inc on line 231
 [01-Oct-2011 15:58:14] PHP Fatal error:  Call to undefined function _date_api_element_info() in /home/drush/public_html/drupalbenl_7/sites/all/modules/date/date_api/date_api.module on line 1774
 [01-Oct-2011 16:02:30] PHP Fatal error:  Call to undefined function _date_api_element_info() in /home/drush/public_html/drupalbenl_7/sites/all/modules/date/date_api/date_api.module on line 1774
+[02-Oct-2011 10:52:26] PHP Fatal error:  Call to undefined function _date_api_element_info() in /home/drush/public_html/drupalbenl_7/sites/all/modules/date/date_api/date_api.module on line 1774
+[02-Oct-2011 11:03:01] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/drush/public_html/drupalbenl_7/sites/all/modules/views/includes/admin.inc on line 4127
+[02-Oct-2011 11:03:08] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/drush/public_html/drupalbenl_7/sites/all/modules/views/includes/admin.inc on line 4127
+[02-Oct-2011 11:03:15] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/drush/public_html/drupalbenl_7/sites/all/modules/views/includes/admin.inc on line 4127
