@@ -44,3 +44,7 @@
 #preface {
   padding:20px 0;
 }
+
+body.front h1 {
+  display:none;
+}
