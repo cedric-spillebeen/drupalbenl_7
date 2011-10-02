@@ -13,9 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height:120%; 
   text-shadow: 1px 1px 1px #EAF1EA; 
   color:#1487d4; 
-  font-family: 'Varela Round',Helvetica,Arial,sans-serif;
+  font-family: 'CentabelBookCentabelBook',Helvetica,Arial,sans-serif;
   font-weight:normal;
 }
+
+body.front h1 {
+  display:none;
+}
+
 
 h1 { font-size: 32px; margin:0 0 20px 0; }
 
@@ -154,7 +159,7 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 #preface {
   clear:both;
   overflow:hidden;
-  padding: 1em 0 1em 0;
+  padding: 19px 0 20px 0;
   background: #efeeee;
   /* IE10 */ 
   background-image: -ms-linear-gradient(top, #efeeee 0%, #dadada 100%);
@@ -752,6 +757,9 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
 #block-views-banner-block {
   position:relative;
 }
+#block-views-banner-block .views-field-field-foto {
+	line-height: 0;	
+}
 #block-views-banner-block .views-field-nothing a {
 	font-weight: bold;
 	display: block;
@@ -793,19 +801,6 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
   clear:both;
 }
 
-/* Correcties voor toevoeging aan style.css */
-
-#preface {
-  padding:20px 0;
-}
-
-body.front h1 {
-  display:none;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-  font-family: 'CentabelBookCentabelBook',Helvetica,Arial,sans-serif;
-}
 
 
 
