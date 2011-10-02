@@ -5,6 +5,7 @@ core = 7.x
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/hans.css
+stylesheets[all][] = fonts/centabel/stylesheet.css
 
 regions[search_area] = Search area
 regions[menu] = Menu
