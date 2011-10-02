@@ -1,9 +1,8 @@
 <?php
-// $Id: comment-wrapper.tpl.php,v 1.10 2010/05/05 06:41:22 webchick Exp $
 
 /**
  * @file
- * Default theme implementation to provide an HTML container for comments.
+ * Bartik's theme implementation to provide an HTML container for comments.
  *
  * Available variables:
  * - $content: The array of content-related elements for the node. Use
@@ -38,21 +37,9 @@
 ?>
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($content['comments'] && $node->type != 'forum'): ?>
-
-    <div id="comments-title">
-    
-        <div id="comments-title-left">
-        <?php print render($title_prefix); ?>
-        <h2 class="title"><?php print t('Comments'); ?></h2>
-        <?php print render($title_suffix); ?>
-        </div>
-        
-        <div id="comments-title-right">
-        <span class="counter"><?php print $node->comment_count; ?></span>
-        </div>
-
-    </div>
-    
+    <?php print render($title_prefix); ?>
+    <h2 class="title"><?php print t('Comments'); ?></h2>
+    <?php print render($title_suffix); ?>
   <?php endif; ?>
 
   <?php print render($content['comments']); ?>
