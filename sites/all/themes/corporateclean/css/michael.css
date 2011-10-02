@@ -1,0 +1,13 @@
+/*
+ * Views Serviceprovider
+ */
+.view-serviceproviders .views-field-field-serviceprovider-logo {
+  border: 1px solid #CCCCCC;
+  display: table;
+  float: left;
+  height: 135px;
+  margin-right: 20px;
+  overflow: hidden;
+  padding: 5px;
+  width: 180px;
+}
