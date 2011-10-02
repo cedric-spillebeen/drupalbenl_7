@@ -1,0 +1,13 @@
+.views-row {
+  margin-bottom: 25px;
+}
+
+.views-field-field-location {
+  border-left: 1px solid black;
+  float: left;
+  width: 39%;
+}
+
+.views-field-field-location > div, .views-field-field-location > strong {
+  padding-left: 10px;
+}
