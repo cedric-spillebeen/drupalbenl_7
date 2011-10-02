@@ -47,27 +47,26 @@
   </div><!-- EOF: #preface -->
 <?php endif; ?> 
 
-
-<!-- Rij 1 -->
-<?php if ($page['rij1']): ?>
-  <div id="rij1">
-    <?php print render($page['rij1']); ?>    
-  </div><!-- EOF: #rij1 -->	
-<?php endif; ?> 
-
-
-<!-- Rij 2 -->
-<?php if ($page['rij2']): ?>
-  <div id="rij2">
-    <?php print render($page['rij2']); ?>    
-  </div><!-- EOF: #rij2 -->	
-<?php endif; ?> 
-
-
-
 <!-- Content. -->
 <div id="content">
   <div id="content-inside" class="inside">
+    
+  <!-- Rij 1 -->
+  <?php if ($page['rij1']): ?>
+    <div id="rij1">
+      <?php print render($page['rij1']); ?>    
+    </div><!-- EOF: #rij1 -->	
+  <?php endif; ?> 
+
+
+  <!-- Rij 2 -->
+  <?php if ($page['rij2']): ?>
+    <div id="rij2">
+      <?php print render($page['rij2']); ?>    
+    </div><!-- EOF: #rij2 -->	
+  <?php endif; ?> 
+
+
     <div id="main">
       <?php if (theme_get_setting('breadcrumb_display','corporateclean')): print $breadcrumb; endif; ?>
             

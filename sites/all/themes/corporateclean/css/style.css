@@ -9,7 +9,7 @@
 body { font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; margin:0; padding:0; color: #7a7a7a; outline:0 none; vertical-align:baseline; background:#1a1a1a; }
 
 h1, h2, h3, h4, h5, h6 { 
-  margin:25px 0 20px 0; 
+  margin:0 0 20px 0; 
   line-height:120%; 
   text-shadow: 1px 1px 1px #EAF1EA; 
   color:#1487d4; 
@@ -64,7 +64,14 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 /**
  * Header
  */
-#header a { color:#0099cc; }
+#header a { 
+  color:#fff; 
+  float:left;
+}
+
+#header li { 
+  list-style:none;
+}
 
 #site-name {
 	color: #fff;
@@ -145,24 +152,24 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 }
 
 #preface {
-	clear:both;
-	overflow:hidden;
-	padding: 1em 0 1em 0;
-	background: #efeeee;
-	/* IE10 */ 
-	background-image: -ms-linear-gradient(top, #efeeee 0%, #dadada 100%);
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top, #efeeee 0%, #dadada 100%);
-	/* Opera */ 
-	background-image: -o-linear-gradient(top, #efeeee 0%, #dadada 100%);
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efeeee), color-stop(1, #dadada));
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top, #efeeee 0%, #dadada 100%);
-	/* Proposed W3C Markup */ 
-	background-image: linear-gradient(top, #efeeee 0%, #dadada 100%);
-	/* IE6-9 */ 
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efeeee', endColorstr='#dadada');	
+  clear:both;
+  overflow:hidden;
+  padding: 1em 0 1em 0;
+  background: #efeeee;
+  /* IE10 */ 
+  background-image: -ms-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efeeee), color-stop(1, #dadada));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Proposed W3C Markup */ 
+  background-image: linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* IE6-9 */ 
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efeeee', endColorstr='#dadada');	
 }
 
 #preface-inside {
@@ -181,29 +188,33 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
   display: block;
 } 
 
-#rij1 .block, #rij2 {
+#rij1 .block, #rij2 .block {
   width:300px;
   float:left;
 } 
 
+#block-aggregator-category-1, #block-views-gezichten-van-community-block {
+  padding:0 20px;
+}
+
 #content {
-	clear:both;
-	overflow:hidden;
-	background: #e8e8e8;
-	/* IE10 */ 
-	background-image: -ms-linear-gradient(top, #e8e8e8 0%, #efefef 100%);
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top, #e8e8e8 0%, #efefef 100%);
-	/* Opera */ 
-	background-image: -o-linear-gradient(top, #e8e8e8 0%, #efefef 100%);
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e8e8e8), color-stop(1, #efefef));
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #efefef 100%);
-	/* Proposed W3C Markup */ 
-	background-image: linear-gradient(top, #e8e8e8 0%, #efefef 100%);
-	/* IE6-9 */ 
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#efefef');
+  clear:both;
+  overflow:hidden;
+  background: #efeeee;
+  /* IE10 */ 
+  background-image: -ms-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efeeee), color-stop(1, #dadada));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* Proposed W3C Markup */ 
+  background-image: linear-gradient(top, #efeeee 0%, #dadada 100%);
+  /* IE6-9 */ 
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efeeee', endColorstr='#dadada');
 }
 
 #content-inside {
