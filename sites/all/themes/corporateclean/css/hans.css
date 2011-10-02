@@ -1,7 +1,18 @@
 /*
  * Views slideshow
  */
+#block-views-banner-block {
+  position:relative;
+}
+
 #block-views-banner-block .views-field-title, #block-views-banner-block .views-field-body {
+  position:absolute;
+  top:20px;
+  right:20px;
   width:250px;
   height:200px;
+  background:#fff;
+  opacity: .7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+  filter: alpha(opacity=70); // IE5.5-7
 }
