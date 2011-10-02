@@ -7,6 +7,7 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/hans.css
 stylesheets[all][] = fonts/centabel/stylesheet.css
 stylesheets[all][] = css/bartik.css
+stylesheets[all][] = css/johnny.css
 
 regions[search_area] = Search area
 regions[menu] = Menu
