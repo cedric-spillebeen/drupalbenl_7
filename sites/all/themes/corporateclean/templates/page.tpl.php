@@ -35,8 +35,19 @@
 
 <div id="header-menu-inside">
     <?php 
+    
+    /*
 	$main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
 	print drupal_render($main_menu_tree);
+	
+	$secondary_menu_tree = menu_tree(variable_get('secondary_main_links_source', 'main-menu')); 
+	print drupal_render($secondary_menu_tree);
+		
+	print_r($secondary_menu);
+	print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix'))));
+	*/
+
+	print render($page['menu']);	
 	?>
 </div><!-- EOF: #header-menu-inside -->
 
@@ -164,8 +175,6 @@
     <div id="footer-bottom-inside">
     
     	<div id="footer-bottom-left">
-        
-            <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix')))); ?>
             
             <?php print render($page['footer']); ?>
             

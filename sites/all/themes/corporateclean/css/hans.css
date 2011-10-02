@@ -1,0 +1,50 @@
+/*
+ * Views slideshow
+ */
+#block-views-banner-block {
+  position:relative;
+}
+
+#block-views-banner-block .views-field-title, #block-views-banner-block .views-field-body {
+  position:absolute;
+  top:100px;
+  right:20px;
+  width:250px;
+  height:90px;
+  background:#fff;
+  opacity: .7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+  filter: alpha(opacity=70); // IE5.5-7
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding:15px;
+  color:#000;
+}
+
+/*
+ * Gezichten van community block
+ */
+
+#block-views-gezichten-van-community-block .views-row img {
+  width:58px;
+  height:58px;
+}
+
+#block-views-gezichten-van-community-block .user-picture {
+  padding: 0;
+}
+
+#block-views-gezichten-van-community-block .more-link {
+  clear:both;
+}
+
+/* Correcties */
+
+#preface {
+  padding:20px 0;
+}
+
+body.front h1 {
+  display:none;
+}
