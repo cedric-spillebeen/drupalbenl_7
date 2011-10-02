@@ -4,8 +4,9 @@ version = 7.x-1.1
 core = 7.x
 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/hans.css
 stylesheets[all][] = fonts/centabel/stylesheet.css
-stylesheets[all][] = css/johnny.css
+stylesheets[all][] = css/bartik.css
 
 regions[search_area] = Search area
 regions[menu] = Menu
@@ -24,9 +25,6 @@ regions[sidebar_first] = First sidebar
 regions[footer_first] = Footer 1
 regions[footer_second] = Footer 2
 regions[footer_third] = Footer 3
-
-regions[footer] = Footer
-regions[footer_bottom_right] = Footer bottom right
 
 regions[highlighted] = Highlighted
 regions[help] = Help
