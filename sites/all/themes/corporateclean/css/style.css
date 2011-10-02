@@ -179,21 +179,6 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
   padding: 0px;
   overflow: hidden;
   display: block;
-  background: #efeeee;
-  /* IE10 */ 
-  background-image: -ms-linear-gradient(top, #efeeee 0%, #dadada 100%);
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(top, #efeeee 0%, #dadada 100%);
-  /* Opera */ 
-  background-image: -o-linear-gradient(top, #efeeee 0%, #dadada 100%);
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efeeee), color-stop(1, #dadada));
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(top, #efeeee 0%, #dadada 100%);
-  /* Proposed W3C Markup */ 
-  background-image: linear-gradient(top, #efeeee 0%, #dadada 100%);
-  /* IE6-9 */ 
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efeeee', endColorstr='#dadada');
 } 
 
 #rij1 .block, #rij2 .block {
