@@ -355,7 +355,6 @@ function tic_update_7003() {
   db_update('node_revision')
     ->fields(array('comment' => COMMENT_NODE_OPEN))
     ->condition('nid', $subquery, 'IN')
-    ->condition('type', 'page')
     ->condition('comment', COMMENT_NODE_CLOSED)
     ->execute();
 
