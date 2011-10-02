@@ -9,7 +9,7 @@
 body { font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; margin:0; padding:0; color: #7a7a7a; outline:0 none; vertical-align:baseline; background:#1a1a1a; }
 
 h1, h2, h3, h4, h5, h6 { 
-  margin:25px 0 20px 0; 
+  margin:0 0 20px 0; 
   line-height:120%; 
   text-shadow: 1px 1px 1px #EAF1EA; 
   color:#1487d4; 
@@ -64,7 +64,14 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 /**
  * Header
  */
-#header a { color:#0099cc; }
+#header a { 
+  color:#fff; 
+  float:left;
+}
+
+#header li { 
+  list-style:none;
+}
 
 #site-name {
 	color: #fff;
@@ -184,6 +191,7 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 #rij1 .block, #rij2 .block {
   width:300px;
   float:left;
+  padding:20px;
 } 
 
 #content {
