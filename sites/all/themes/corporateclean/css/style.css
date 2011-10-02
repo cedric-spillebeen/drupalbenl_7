@@ -459,13 +459,13 @@ border-bottom:1px solid #353535; }
 #header-menu ul.menu li.expanded ul ul { display: none; left: 230px; top:0; padding:0; }
 
 /* Footer menu */
-#footer .block ul.menu { margin: 0; padding: 0; }
+#footer .block ul { margin: 0; padding: 0; }
 
-#footer .block ul.menu ul.menu { margin: 0 0 0 15px; }
+#footer .block ul ul { margin: 0 0 0 15px; }
 
-#footer .block ul.menu li { list-style:none; margin:0; padding:0; }
+#footer .block ul li { list-style:none; margin:0; padding:0; }
 
-#footer .block ul.menu li a { border-bottom: 1px solid #353535; display: block; padding:5px; }
+#footer .block ul li a { border-bottom: 1px solid #353535; display: block; padding:5px; }
 
 /* 
 * Footer-bottom menu 
