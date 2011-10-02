@@ -202,6 +202,10 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
   padding:0 20px;
 }
 
+body.front .view-Evenementen .views-row {
+  margin-bottom: 0;
+}
+
 #content {
   clear:both;
   overflow:hidden;
