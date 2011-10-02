@@ -263,3 +263,100 @@ function tic_update_7002() {
   ));
   return array();
 }
+
+/*
+ * Update schema version of webform, fix revision information
+ */
+function tic_update_7003() {
+  db_update('field_data_comment_body')
+    ->fields(array('comment_body_format' => 1))
+    ->condition('comment_body_format', 2)
+    ->execute();
+  db_update('field_revision_comment_body')
+    ->fields(array('comment_body_format' => 1))
+    ->condition('comment_body_format', 2)
+    ->execute();
+  db_update('field_data_field_advertorial')
+    ->fields(array('field_advertorial_format' => 1))
+    ->condition('field_advertorial_format', 2)
+    ->execute();
+  db_update('field_revision_field_advertorial')
+    ->fields(array('field_advertorial_format' => 1))
+    ->condition('field_advertorial_format', 2)
+    ->execute();
+  db_update('field_data_field_serviceprovider_comp')
+    ->fields(array('field_serviceprovider_comp_format' => 1))
+    ->condition('field_serviceprovider_comp_format', 2)
+    ->execute();
+  db_update('field_revision_field_serviceprovider_comp')
+    ->fields(array('field_serviceprovider_comp_format' => 1))
+    ->condition('field_serviceprovider_comp_format', 2)
+    ->execute();
+
+  db_change_field('watcher_user_settings', 'notifications_updates', 'notifications_updates', array(
+    'description' => 'User will be notified about updates of posts the user watches',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  db_change_field('watcher_user_settings', 'notifications_new_comments', 'notifications_new_comments', array(
+    'description' => 'User will be notified about new comments on posts the user watches',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  db_change_field('watcher_user_settings', 'autowatch_commented_on', 'autowatch_commented_on', array(
+    'description' => 'User will automatically watch nodes the user comments on',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  db_change_field('watcher_user_settings', 'autowatch_posted', 'autowatch_posted', array(
+    'description' => 'User will automatically watch nodes the user creates',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  db_change_field('watcher_user_settings', 'share_binder', 'share_binder', array(
+    'description' => 'Whether the user\'s list of watched posts should be viewable by others',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+  db_change_field('watcher_user_settings', 'custom', 'custom', array(
+    'description' => 'Whether the user has customized the settings or whether they were derived from the defaults',
+    'type' => 'int',
+    'size' => 'tiny',
+    'not NULL' => TRUE,
+    'disp-width' => '1',
+    'default' => 0
+  ));
+
+  db_update('node')
+    ->fields(array('comment' => COMMENT_NODE_OPEN))
+    ->condition('type', 'page')
+    ->condition('comment', COMMENT_NODE_CLOSED)
+    ->execute();
+
+  $subquery = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('type', 'page');
+
+  db_update('node_revision')
+    ->fields(array('comment' => COMMENT_NODE_OPEN))
+    ->condition('nid', $subquery, 'IN')
+    ->condition('comment', COMMENT_NODE_CLOSED)
+    ->execute();
+
+  return array();
+}
