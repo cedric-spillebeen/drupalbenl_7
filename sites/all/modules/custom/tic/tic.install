@@ -341,11 +341,17 @@ function tic_update_7003() {
     'disp-width' => '1',
     'default' => 0
   ));
+  return array();
+}
 
+
+/*
+ * Enable comments for pages
+ */
+function tic_update_7004() {
   db_update('node')
     ->fields(array('comment' => COMMENT_NODE_OPEN))
     ->condition('type', 'page')
-    ->condition('comment', COMMENT_NODE_CLOSED)
     ->execute();
 
   $subquery = db_select('node', 'n')
@@ -355,7 +361,6 @@ function tic_update_7003() {
   db_update('node_revision')
     ->fields(array('comment' => COMMENT_NODE_OPEN))
     ->condition('nid', $subquery, 'IN')
-    ->condition('comment', COMMENT_NODE_CLOSED)
     ->execute();
 
   return array();
