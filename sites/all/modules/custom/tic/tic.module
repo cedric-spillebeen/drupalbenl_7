@@ -34,3 +34,31 @@ function tic_cron() {
     ->condition('comment', COMMENT_NODE_OPEN)
     ->execute();
 }
+
+/**
+* Implementation of hook_menu
+**/
+
+function tic_menu() {
+        $items = array();
+        $items['frontpage'] = array(
+                'title' => 'Frontpage drupal.be & .nl',
+                'description' => 'Frontpage',
+                'page callback' => 'tic_blank',
+                'type' => MENU_CALLBACK,
+                'access callback' => 'is_string',
+                'access arguments' => array('string'),
+        );
+        return $items;
+}
+
+/**
+* Display void page
+**/
+
+function tic_blank()
+{
+        return '';
+}
+
+
