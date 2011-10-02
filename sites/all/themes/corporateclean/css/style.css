@@ -191,8 +191,11 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 #rij1 .block, #rij2 .block {
   width:300px;
   float:left;
-  padding:20px;
 } 
+
+#block-aggregator-category-1, #block-views-gezichten-van-community-block {
+  padding:0 20px;
+}
 
 #content {
   clear:both;
@@ -739,118 +742,3 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
 .twtr-bd { display:block; overflow:hidden; }
 
 .twtr-widget .twtr-tweet { border-bottom: 1px solid #353535 !important; padding: 0 0 5px 0; margin: 0 0 5px 0;  }
-
-
-
-
-
-/*
- * Views slideshow
- */
-#block-views-banner-block {
-  position:relative;
-}
-
-#block-views-banner-block .views-field-title, #block-views-banner-block .views-field-body {
-  position:absolute;
-  top:100px;
-  right:20px;
-  width:250px;
-  height:90px;
-  background:#fff;
-  opacity: .7;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
-  filter: alpha(opacity=70); // IE5.5-7
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  padding:15px;
-  color:#000;
-}
-
-/*
- * Gezichten van community block
- */
-
-#block-views-gezichten-van-community-block .views-row img {
-  width:52px;
-  height:52px;
-  padding: 2px;
-}
-
-#block-views-gezichten-van-community-block .user-picture {
-  padding: 0;
-}
-
-#block-views-gezichten-van-community-block .more-link {
-  clear:both;
-}
-
-/* Correcties voor toevoeging aan style.css */
-
-#preface {
-  padding:20px 0;
-}
-
-body.front h1 {
-  display:none;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-  font-family: 'CentabelBookCentabelBook',Helvetica,Arial,sans-serif;
-}
-
-
-
-
-/*
- * Views Serviceprovider
- */
-.view-serviceproviders .views-row {
-  margin: 25px 0 20px 0;
-}  
- 
-.view-serviceproviders .views-field {
-  padding-left: 212px;
-} 
- 
-.view-serviceproviders .views-field-field-serviceprovider-logo {
-	padding-left: 0;
-  border: 1px solid #CCCCCC;
-	background-color: #fff;
-	text-align: center;
-	vertical-align: middle;
-  height: 135px;
-  margin-bottom: -148px;
-  margin-right: 20px;
-  overflow: hidden;
-  padding: 5px;
-  width: 180px;
-}
-.view-serviceproviders .views-field-field-serviceprovider-logo .field-content {
-  display: table-cell; 
-	text-align: center;
-	vertical-align: middle;
-  height: 135px;
-  width: 180px;
-}
-.view-serviceproviders .views-field-field-serviceprovider-logo a {
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-}
-
-.view-serviceproviders .views-field-title h2 {
-  font-size: 1.4em;
-  margin: 0 0 0.5em;
-}
-
-.view-serviceproviders .views-field-body {
-  margin-bottom: 1em;
-}
-
-.view-serviceproviders .views-field-field-serviceprovider-link .views-label,
-.view-serviceproviders .views-field-field-dienst .views-label {
-	float: left;
-	margin-right: 0.4em;
-}
