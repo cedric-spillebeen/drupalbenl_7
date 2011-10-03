@@ -198,14 +198,6 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
   float:left;
 } 
 
-#block-views-evenementen-block-5, #block-views-gezichten-van-community-block {
-  padding:0 20px;
-}
-
-body.front .view-Evenementen .views-row {
-  margin-bottom: 0;
-}
-
 #content {
   clear:both;
   overflow:hidden;
@@ -859,4 +851,34 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
 .view-serviceproviders .views-field-field-dienst .views-label {
 	float: left;
 	margin-right: 0.4em;
+}
+
+/* View evenementen */
+
+#block-views-evenementen-block-5, #block-views-gezichten-van-community-block {
+  padding:0 20px;
+}
+
+body.front .view-Evenementen .views-row {
+  margin-bottom: 0;
+}
+
+.view-Evenementen .views-row {
+  margin-bottom: 25px;
+  clear: left;
+}
+
+.view-Evenementen .views-field-field-location {
+  border-left: 1px solid black;
+  float: left;
+  width: 39%;
+}
+
+.view-Evenementen .views-field-field-location > div, .view-Evenementen .views-field-field-location > strong {
+  padding-left: 10px;
+}
+
+.view-Evenementen .views-field-body {
+  float: left;
+  width: 60%;
 }
