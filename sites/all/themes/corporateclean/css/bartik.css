@@ -138,8 +138,8 @@ ul.tips {
 }
 .comment .comment-arrow {
   background: url(../images/comment-arrow.gif) no-repeat 0 center transparent; /* LTR */
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
   height: 40px;
   margin-left: -47px; /* LTR */
   margin-top: 10px;
