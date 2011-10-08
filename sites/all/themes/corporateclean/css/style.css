@@ -59,7 +59,7 @@ blockquote { background:transparent url('../images/blockquote.png') no-repeat to
 
 .breadcrumb-separator { padding:0 8px 0 4px; }
 
-.submitted { margin:-15px 0 20px 0; font-size: 85%; text-transform: uppercase; }
+.submitted { margin:0 0 20px 0; font-size: 85%; text-transform: uppercase; }
 
 .region-sidebar-first .block h2 {  margin: 0 0 15px 0; padding:0 0 5px 0; }
 
