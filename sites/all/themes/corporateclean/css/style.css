@@ -732,6 +732,19 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
 }
 
 
+#sidebar .block .user-picture {
+  float: right;
+  margin: 0 0 10px 20px; 
+  padding: 2px;
+  border: 1px solid #eee;
+}
+
+.profile .user-picture {
+  margin: 0 0 10px 20px;
+  padding: 2px;
+  border: 1px solid #eee;
+  background: #fff;
+}
 
 
 
