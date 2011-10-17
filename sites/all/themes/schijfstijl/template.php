@@ -7,7 +7,7 @@
  * @return
  *   A string containing the breadcrumb output.
  */
-function corporateclean_breadcrumb($variables){
+function schijfstijl_breadcrumb($variables){
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     $breadcrumb[] = drupal_get_title();
@@ -15,7 +15,7 @@ function corporateclean_breadcrumb($variables){
   }
 }
 
-function corporateclean_form_alter(&$form, &$form_state, $form_id) {
+function schijfstijl_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
   
     unset($form['search_block_form']['#title']);
