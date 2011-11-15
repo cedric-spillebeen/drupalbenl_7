@@ -746,8 +746,6 @@ ul.social-bookmarks li.delicious a { background:url('../images/social-media-deli
   background: #fff;
 }
 
-
-
 /*
  * Views Serviceprovider
  */
@@ -835,4 +833,9 @@ body.front .view-Evenementen .views-row {
 
 .more-link a {
   text-decoration:underline;
+}
+
+/* views output style improvements */
+.item-list h3 {
+  margin: 10px 0; 
 }
